@@ -6,7 +6,7 @@ import {
   useSelector,
   useDispatch
 } from 'react-redux';
-import { Modal } from '@christopherigm/rrmc';
+import { Modal } from 'rrmc';
 import SetGlobalAlertDialog from 'src/redux/actions/set-global-alert-dialog';
 
 const GlobalAlertDialog = (): React.ReactElement => {

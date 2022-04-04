@@ -7,7 +7,7 @@ import EmailLoginFrom from 'src/modules/login/email-login-from';
 import {
   SubTitle,
   Modal
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import { ArrayErrorsToHTMLList } from 'src/modules/utils/date-parser';
 import { useNavigate } from 'react-router-dom';
 import APISDK from 'src/api/api-sdk/api-sdk';

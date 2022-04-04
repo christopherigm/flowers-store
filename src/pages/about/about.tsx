@@ -4,7 +4,7 @@ import React, {
 import SystemCheck from 'src/modules/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import DefaultNavButtons from 'src/modules/nav-bar/default-nav-buttons';
-import { HorizontalSpace } from '@christopherigm/rrmc';
+import { HorizontalSpace } from 'rrmc';
 import Footer from 'src/modules/footer/footer';
 
 const About = (): React.ReactElement => {

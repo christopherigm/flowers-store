@@ -6,7 +6,7 @@ import {
   SwiperSlide
 } from 'swiper/react';
 import 'src/modules/home-top-slider/home-top-slider.scss';
-import { Title } from '@christopherigm/rrmc';
+import { Title } from 'rrmc';
 
 const SlideAddons = ( props: any ): React.ReactElement => {
   const sliderNextButtonFileURL = props.sliderNextButtonFileURL;

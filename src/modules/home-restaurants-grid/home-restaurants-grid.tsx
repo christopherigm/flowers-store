@@ -13,7 +13,7 @@ import {
   HorizontalSpace,
   SubTitle,
   Ratings
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import BuyableItem from 'src/modules/buyable-item/buyable-item';
 import { Link } from 'react-router-dom';
 

@@ -19,7 +19,7 @@ import store, {
   persistor
 } from 'src/redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import '@christopherigm/rrmc/dist/cjs/index.css';
+import 'rrmc/dist/cjs/index.css';
 
 ReactDOM.render(
   <React.StrictMode>

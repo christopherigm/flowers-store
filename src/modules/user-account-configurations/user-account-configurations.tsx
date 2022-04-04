@@ -10,7 +10,7 @@ import {
   GenericTextArea,
   HorizontalSpace,
   StrongText
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import APISDK from 'src/api/api-sdk/api-sdk';
 
 const AccountForm = (props: any): React.ReactElement => {

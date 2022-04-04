@@ -10,7 +10,7 @@ import SystemCheck from 'src/modules/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import DefaultNavButtons from 'src/modules/nav-bar/default-nav-buttons';
 import Footer from 'src/modules/footer/footer';
-import { HorizontalSpace } from '@christopherigm/rrmc';
+import { HorizontalSpace } from 'rrmc';
 import SetGlobalAlertDialog from 'src/redux/actions/set-global-alert-dialog';
 import UserAccountMenu from 'src/modules/user-account-menu/user-account-menu';
 import UserFavorites from 'src/modules/user-favorites/user-favorites';

@@ -12,7 +12,7 @@ import {
   BasicIcon,
   VerticalSpace,
   HorizontalSpace
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 
 const getAddressIcon = (type: string): string => {
   switch ( type ) {

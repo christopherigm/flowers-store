@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import {
   SubTitle,
   HorizontalSpace
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
 
 const headerPictureFile = '/assets/login.jpg';

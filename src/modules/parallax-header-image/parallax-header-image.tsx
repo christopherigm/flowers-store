@@ -1,6 +1,6 @@
 import React from 'react';
 import 'src/modules/parallax-header-image/parallax-header-image.scss';
-import { Title } from '@christopherigm/rrmc';
+import { Title } from 'rrmc';
 import Indicator from 'src/modules/indicator/indicator';
 
 const ParallaxHeaderImage = (props: any): React.ReactElement => {

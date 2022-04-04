@@ -6,7 +6,7 @@ import BuyableItem from 'src/modules/buyable-item/buyable-item';
 import {
   SubTitle,
   HorizontalSpace
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import LoadUserFavoriteItems from 'src/modules/user-favorites/load-user-favorite-items';
 
 const UserFavorites = (): React.ReactElement => {

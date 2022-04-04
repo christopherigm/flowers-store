@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import {
   StrongText,
   HorizontalSpace
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import LoadUserCart from 'src/modules/user-cart/load-user-cart';
 import UserCartItem from 'src/modules/user-cart/user-cart-item';
 

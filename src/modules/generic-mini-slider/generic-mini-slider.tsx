@@ -9,7 +9,7 @@ import {
 import { useSelector } from 'react-redux';
 import 'src/modules/generic-mini-slider/generic-mini-slider.scss';
 import fetchData from 'src/modules/utils/fetch-data';
-import { SubTitle } from '@christopherigm/rrmc';
+import { SubTitle } from 'rrmc';
 import BuyableItem from 'src/modules/buyable-item/buyable-item';
 
 const sliderNextButtonFile = '/assets/slider-button-2-next.svg';
