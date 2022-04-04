@@ -1,7 +1,7 @@
 import React, {
   useRef
 } from 'react';
-import { HorizontalSpace } from '@christopherigm/rrmc';
+import { HorizontalSpace } from 'rrmc';
 
 const EmailLoginFrom = ( props: any ): React.ReactElement => {
   const emailRef: any = useRef(null);

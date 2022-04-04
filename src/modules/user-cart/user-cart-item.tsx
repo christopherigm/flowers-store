@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import 'src/modules/user-cart/user-cart-item.scss';
 import getMoneyFormat from 'src/modules/utils/money-formats';
 import { ProductTypeConverter } from 'src/modules/utils/products-services';
-import { StrongText } from '@christopherigm/rrmc';
+import { StrongText } from 'rrmc';
 import {
   DeleteCartItem,
   UpdateCartItem

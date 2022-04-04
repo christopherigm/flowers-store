@@ -8,7 +8,7 @@ import {
   HorizontalSpace,
   StrongText,
   GenericTextInput
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 
 const MenuOptionItem = (props: any): React.ReactElement => {
   return (

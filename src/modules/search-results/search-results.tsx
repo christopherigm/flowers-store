@@ -6,7 +6,7 @@ import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-head
 import {
   HorizontalSpace,
   SubTitle
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 
 const headerPictureFile = '/assets/search-bg.jpg';
 

@@ -5,7 +5,7 @@ import React, {
 import { useSelector } from 'react-redux';
 import fetchData from 'src/modules/utils/fetch-data';
 import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
-import { HorizontalSpace } from '@christopherigm/rrmc';
+import { HorizontalSpace } from 'rrmc';
 
 const headerPictureFile = '/assets/digital-services.jpg';
 

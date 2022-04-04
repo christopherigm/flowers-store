@@ -7,7 +7,7 @@ import fetchData from 'src/modules/utils/fetch-data';
 import {
   HorizontalSpace,
   SubTitle
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import { useSelector } from 'react-redux';
 import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
 import * as M from 'materialize-css';

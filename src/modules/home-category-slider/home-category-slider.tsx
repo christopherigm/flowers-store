@@ -12,7 +12,7 @@ import fetchData from 'src/modules/utils/fetch-data';
 import {
   HorizontalSpace,
   SubTitle
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 
 const sliderNextButtonFile = '/assets/slider-button-next.svg';
 const sliderPrevButtonFile = '/assets/slider-button-prev.svg';

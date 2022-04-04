@@ -1,5 +1,5 @@
 import React from 'react';
-import { HorizontalSpace } from '@christopherigm/rrmc';
+import { HorizontalSpace } from 'rrmc';
 import GenericMiniSlider from 'src/modules/generic-mini-slider/generic-mini-slider';
 import 'src/modules/home-products-and-services/home-products-and-services.scss';
 import LoadUserFavoriteItems from 'src/modules/user-favorites/load-user-favorite-items';

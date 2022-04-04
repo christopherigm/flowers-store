@@ -8,7 +8,7 @@ import EmailFrom from 'src/modules/register-user/email-from';
 import {
   SubTitle,
   Modal
-} from '@christopherigm/rrmc';
+} from 'rrmc';
 import { ArrayErrorsToHTMLList } from 'src/modules/utils/date-parser';
 import { useNavigate } from 'react-router-dom';
 
