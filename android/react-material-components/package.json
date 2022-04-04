@@ -1,0 +1,32 @@
+{
+  "name": "react-material-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "materialize-css": "^1.0.0",
+    "react": "^18.0.0",
+    "react-scripts": "^5.0.0",
+    "sass": "^1.49.10",
+    "stylelint": "^14.6.1",
+    "typescript": "^4.6.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

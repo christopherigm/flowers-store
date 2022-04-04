@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  flowers-store:
+    image: registry.iguzman.com.mx/flowers-store:${BRANCH}
+    restart: unless-stopped
+    scale: 1
+    # environment:
+    #   - REACT_APP_API_URL=${REACT_APP_API_URL}
+    #   - REACT_APP_BRANCH_NAME=${REACT_APP_BRANCH_NAME}
+    #   - REACT_APP_FACEBOOK_APP_ID=${REACT_APP_FACEBOOK_APP_ID}
+    #   - REACT_APP_PRODUCTION=${REACT_APP_PRODUCTION}
+    volumes:
+      - /apps/flowers-store/static:/static
+      - /apps/flowers-store/assets:/assets
+    ports:
+      - "${PUBLIC_PORT}:3000"
