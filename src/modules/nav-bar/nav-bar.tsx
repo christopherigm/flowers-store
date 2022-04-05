@@ -57,7 +57,7 @@ const NavBar = (props: any): React.ReactElement => {
             <NavSearchBox updateQuery={props.updateQuery} />
             <a href='#'
               data-target='mobile-demo'
-              className='sidenav-trigger cyan-text right'>
+              className='sidenav-trigger pink-text right'>
               <i className='material-icons'>menu</i>
             </a>
             <ul
