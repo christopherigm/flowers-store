@@ -10,15 +10,6 @@ const DefaultNavButtons = (props: any): React.ReactElement => {
       text: 'Inicio',
       rightLine: true
     });
-    menu.push({
-      to: '/expos',
-      text: 'Expos',
-      rightLine: true
-    });
-    menu.push({
-      to: '/categorias',
-      text: 'Categorías'
-    });
     props.setSectionMenu(menu);
   }, [props.setSectionMenu]);
   return (<></>);

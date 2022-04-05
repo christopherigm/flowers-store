@@ -6,9 +6,9 @@ import React, {
 import RegisterUserAPICall from 'src/modules/register-user/register-user-api-calls';
 import EmailFrom from 'src/modules/register-user/email-from';
 import {
-  SubTitle,
-  Modal
+  SubTitle
 } from 'rrmc';
+import Modal from 'src/modules/modal/modal';
 import { ArrayErrorsToHTMLList } from 'src/modules/utils/date-parser';
 import { useNavigate } from 'react-router-dom';
 
