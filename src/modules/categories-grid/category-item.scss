@@ -1,0 +1,25 @@
+@import 'materialize-css';
+@import 'src/constants/Constants.scss';
+
+.CategoryItem {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &__img {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .StrongText {
+    margin: 7px 0 5px;
+  }
+}

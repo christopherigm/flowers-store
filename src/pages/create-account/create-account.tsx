@@ -11,13 +11,13 @@ const CreateAccount = (): React.ReactElement => {
   const [sectionMenu, setSectionMenu]: any = useState([]);
 
   return (
-    <>
+    <div className='page'>
       <NavBar sectionMenu={sectionMenu} />
       <DefaultNavButtons setSectionMenu={setSectionMenu} />
       <RegisterUser />
       <Footer />
       <SystemCheck />
-    </>
+    </div>
   );
 };
 

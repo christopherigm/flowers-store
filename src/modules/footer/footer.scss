@@ -14,4 +14,8 @@
   &__version {
     cursor: pointer;
   }
+
+  &__flex-filler {
+    flex-grow: 2;
+  }
 }

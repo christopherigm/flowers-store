@@ -5,12 +5,11 @@ import { useSelector } from 'react-redux';
 import SystemCheck from 'src/modules/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import DefaultNavButtons from 'src/modules/nav-bar/default-nav-buttons';
-import {
-  HorizontalSpace
-} from 'rrmc';
 import HomeTopSlider from 'src/modules/home-top-slider/home-top-slider';
 import Footer from 'src/modules/footer/footer';
 import SystemConfigurationLoader from 'src/modules/system-configuration-loader/system-configuration-loader';
+import HighlightedProducts from 'src/modules/highlighted-products/highlighted-products';
+import CategoriesGrid from 'src/modules/categories-grid/categories-grid';
 
 const sliderNextButtonFile = '/assets/slider-button-next.svg';
 const sliderPrevButtonFile = '/assets/slider-button-prev.svg';
@@ -23,7 +22,7 @@ const Home = (): React.ReactElement => {
   const sliderPrevButtonFileURL = `${prefix}${sliderPrevButtonFile}`;
 
   return (
-    <>
+    <div className='page'>
       <NavBar sectionMenu={sectionMenu} />
       <DefaultNavButtons setSectionMenu={setSectionMenu} />
       {
@@ -37,11 +36,12 @@ const Home = (): React.ReactElement => {
             sliderNextButtonFileURL={sliderNextButtonFileURL}
             sliderPrevButtonFileURL={sliderPrevButtonFileURL} /> : null
       }
-      <HorizontalSpace size='large' />
+      <HighlightedProducts />
+      <CategoriesGrid />
       <Footer />
       <SystemConfigurationLoader home={true} />
       <SystemCheck />
-    </>
+    </div>
   );
 };
 

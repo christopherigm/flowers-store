@@ -12,7 +12,7 @@ export const TermsAndConditions = (): React.ReactElement => {
   const [sectionMenu, setSectionMenu]: any = useState([]);
 
   return (
-    <>
+    <div className='page'>
       <NavBar sectionMenu={sectionMenu} />
       <DefaultNavButtons setSectionMenu={setSectionMenu} />
       <CommonDocument
@@ -21,7 +21,7 @@ export const TermsAndConditions = (): React.ReactElement => {
       <Footer />
       <SystemConfigurationLoader terms_and_conditions={true} />
       <SystemCheck />
-    </>
+    </div>
   );
 };
 

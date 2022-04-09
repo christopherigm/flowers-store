@@ -11,7 +11,7 @@ const About = (): React.ReactElement => {
   const [sectionMenu, setSectionMenu]: any = useState([]);
 
   return (
-    <>
+    <div className='page'>
       <NavBar sectionMenu={sectionMenu} />
       <DefaultNavButtons setSectionMenu={setSectionMenu} />
       <HorizontalSpace size='medium' />
@@ -19,7 +19,7 @@ const About = (): React.ReactElement => {
       <HorizontalSpace size='large' />
       <Footer />
       <SystemCheck />
-    </>
+    </div>
   );
 };
 

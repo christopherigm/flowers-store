@@ -116,7 +116,7 @@ $icon-size: 28px;
 
   &__sub-menu {
     position: absolute;
-    top: $nav-height;
+    top: 0;
     right: 0;
     background-color: white;
     user-select: none;
