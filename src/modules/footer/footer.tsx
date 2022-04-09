@@ -12,6 +12,8 @@ const Footer = (): React.ReactElement => {
   const system = useSelector((state: any) => state.system);
 
   return (
+    <>
+    <div className='Footer__flex-filler'></div>
     <footer className='page-footer pink darken-2 Footer'>
       <div className='footer-copyright Footer__copyright'>
         <div className='container Footer__info'>
@@ -56,6 +58,7 @@ const Footer = (): React.ReactElement => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

@@ -11,7 +11,6 @@ import ActivateUser from 'src/pages/activate-user/activate-user';
 import ChangeLogPage from 'src/pages/changelog/changelog';
 import CreateAccount from 'src/pages/create-account/create-account';
 import LoginUser from 'src/pages/login/login';
-import SearchResultsPage from 'src/pages/search-results/search-results';
 import {
   TermsAndConditions,
   PrivacyPolicy,
@@ -37,7 +36,6 @@ const AppRoutes = (): React.ReactElement => {
         <Route path='/mi-cuenta/direcciones' element={<UserAccountPage />} />
         <Route path='/mi-cuenta/configuracion' element={<UserAccountPage />} />
         <Route path='/mi-cuenta' element={<UserAccountPage />} />
-        <Route path='/buscador' element={<SearchResultsPage />} />
         <Route path='/activate/:token' element={<ActivateUser />} />
         <Route path='/about' element={<About />} />
         <Route path='/create-account' element={<CreateAccount />} />

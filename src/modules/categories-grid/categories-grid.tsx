@@ -1,46 +1,53 @@
 import React, {
-  useEffect,
-  useState
+  useEffect
 } from 'react';
-import { useSelector } from 'react-redux';
 import fetchData from 'src/modules/utils/fetch-data';
-import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
-import { HorizontalSpace } from 'rrmc';
+import {
+  SubTitle,
+  HorizontalSpace
+} from 'rrmc';
+import {
+  useDispatch,
+  useSelector
+} from 'react-redux';
+import CategoryItem from 'src/modules/categories-grid/category-item';
+import 'src/modules/categories-grid/categories-grid.scss';
+import SetSystemData from 'src/redux/actions/set-system-data';
 
-const headerPictureFile = '/assets/digital-services.jpg';
-
-const CategoriesGrid = ( props: any ): React.ReactElement => {
-  const [items, setitems]: any = useState([]);
-  const system = useSelector((state: any) => state.system);
-  const prefix = system.platform.prefix;
-  const headerPictureURL = `${prefix}${headerPictureFile}`;
+const CategoriesGrid = (): React.ReactElement => {
+  const dispatch = useDispatch();
+  const system: any = useSelector((state: any) => state.system);
+  const items = system && system.categories ? system.categories : [];
 
   useEffect(() => {
-    fetchData('groups/?fields[Group]=name,img_picture,slug&page[size]=20')
+    fetchData('product-classifications/')
       .then((response: any) =>{
-        setitems(response);
+        console.log('categories', response.data);
+        dispatch(SetSystemData({
+          categories: response.data
+        }));
       });
   }, [fetchData]);
 
   return (
     <>
-      <ParallaxHeaderImage
-        image={headerPictureURL}
-        size='x-small'
-        title='Categorías' />
-      <HorizontalSpace size='small' />
-      <div className='container'>
+    <HorizontalSpace size='medium' />
+    <div className='CategoriesGrid'>
+      <div className='CategoriesGrid__header-background pink darken-2'></div>
+      <HorizontalSpace size='x-small' />
+      <SubTitle text='Categorias' color='white' shadow={true} />
+      <HorizontalSpace size='xx-small' />
+      <div className='container CategoriesGrid__grid'>
         <div className='row'>
           {
-            items && items.data && items.data.length ?
-              items.data.map((item: any, index: number) => {
-                return (
-                  <></>
-                );
+            items && items.length ?
+              items.map((i: any, index: number) => {
+                return <CategoryItem item={i} key={index} />;
               }) : null
           }
         </div>
       </div>
+    </div>
     </>
   );
 };

@@ -33,13 +33,13 @@ const ActivateUser = (): React.ReactElement => {
   }, [ActivateUserCall]);
 
   return (
-    <>
+    <div className='page'>
       <NavBar />
       <HorizontalSpace size='large' />
       <p>{ status.success ? 'Cuenta activada correctamente' : status.message }</p>
       <Footer />
       <SystemCheck />
-    </>
+    </div>
   );
 };
 

@@ -13,10 +13,7 @@ import Footer from 'src/modules/footer/footer';
 import { HorizontalSpace } from 'rrmc';
 import SetGlobalAlertDialog from 'src/redux/actions/set-global-alert-dialog';
 import UserAccountMenu from 'src/modules/user-account-menu/user-account-menu';
-import UserFavorites from 'src/modules/user-favorites/user-favorites';
-import UserCart from 'src/modules/user-cart/user-cart';
 import UserAccountConfigurations from 'src/modules/user-account-configurations/user-account-configurations';
-import UserAddress from 'src/modules/user-address/user-address';
 
 const UserAccountPage = (): React.ReactElement => {
   const [sectionMenu, setSectionMenu]: any = useState([]);
@@ -38,7 +35,7 @@ const UserAccountPage = (): React.ReactElement => {
     <>
     {
       !user || !user.id ?
-      <>
+      <div className='page'>
         <NavBar sectionMenu={sectionMenu} />
         <DefaultNavButtons setSectionMenu={setSectionMenu} />
         <HorizontalSpace size='medium' />
@@ -46,22 +43,19 @@ const UserAccountPage = (): React.ReactElement => {
         <HorizontalSpace size='medium' />
         <Footer />
         <SystemCheck />
-      </> :
-      <>
+      </div> :
+      <div className='page'>
         <NavBar sectionMenu={sectionMenu} />
         <DefaultNavButtons setSectionMenu={setSectionMenu} />
         <HorizontalSpace size='medium' />
         <div className='container row UserAccount'>
           <UserAccountMenu />
           <div className='col s12 m1 hide-on-med-and-down'></div>
-          { pathname === '/mi-cuenta/favoritos' ? <UserFavorites /> : null }
-          { pathname === '/mi-cuenta/carrito' ? <UserCart /> : null }
           { pathname === '/mi-cuenta/configuracion' ? <UserAccountConfigurations /> : null }
-          { pathname === '/mi-cuenta/direcciones' ? <UserAddress /> : null }
         </div>
         <Footer />
         <SystemCheck />
-      </>
+      </div>
     }
     </>
   );
