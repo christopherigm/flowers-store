@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import * as M from 'materialize-css';
 import EnvironmentVariables from 'src/constants/EnvironmentVariables';
 import { Link } from 'react-router-dom';
-import 'src/modules/footer/footer.scss';
+import 'src/components/footer/footer.scss';
 
 const env = EnvironmentVariables.getInstance();
 const isMobileApp = env.isMobileApp;

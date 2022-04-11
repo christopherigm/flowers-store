@@ -8,8 +8,8 @@ import EmailFrom from 'src/modules/register-user/email-from';
 import {
   SubTitle
 } from 'rrmc';
-import Modal from 'src/modules/modal/modal';
-import { ArrayErrorsToHTMLList } from 'src/modules/utils/date-parser';
+import Modal from 'src/components/modal/modal';
+import { ArrayErrorsToHTMLList } from 'rrmc';
 import { useNavigate } from 'react-router-dom';
 
 const modelInterface = {

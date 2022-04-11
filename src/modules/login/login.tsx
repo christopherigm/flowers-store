@@ -1,10 +1,12 @@
 import React, {
   useState
 } from 'react';
-import { HorizontalSpace } from 'rrmc';
+import {
+  ParallaxHeaderImage,
+  HorizontalSpace
+} from 'rrmc';
 import EmailLogin from 'src/modules/login/email-login';
 import { useSelector } from 'react-redux';
-import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
 
 const headerPictureFile = '/assets/login.jpg';
 

@@ -9,7 +9,7 @@ import SideMenu from 'src/modules/nav-bar/side-menu';
 import MenuItems from 'src/modules/nav-bar/menu-items';
 import { SetUserData } from 'src/redux/actions/user-actions';
 import { useDispatch } from 'react-redux';
-import NavSearchBox from 'src/modules/nav-search-box/nav-search-box';
+import NavSearchBox from 'src/components/nav-search-box/nav-search-box';
 import { useNavigate } from 'react-router-dom';
 
 const logoFile = '/assets/logo.jpg';

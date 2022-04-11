@@ -2,7 +2,7 @@ import React, {
   useEffect
 } from 'react';
 import { useDispatch } from 'react-redux';
-import fetchData from 'src/modules/utils/fetch-data';
+import fetchData from 'src/components/utils/fetch-data';
 import SetSystemConfigurations from 'src/redux/actions/set-system-configurations';
 
 interface SystemConfigurationLoaderInterface {

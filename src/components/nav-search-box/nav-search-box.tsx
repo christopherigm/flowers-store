@@ -5,7 +5,7 @@ import React, {
 } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import 'src/modules/nav-search-box/nav-search-box.scss';
+import 'src/components/nav-search-box/nav-search-box.scss';
 
 const iconFile = '/assets/iconmonstr-magnifier-3.svg';
 

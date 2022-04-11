@@ -7,8 +7,8 @@ import EmailLoginFrom from 'src/modules/login/email-login-from';
 import {
   SubTitle
 } from 'rrmc';
-import Modal from 'src/modules/modal/modal';
-import { ArrayErrorsToHTMLList } from 'src/modules/utils/date-parser';
+import Modal from 'src/components/modal/modal';
+import { ArrayErrorsToHTMLList } from 'rrmc';
 import { useNavigate } from 'react-router-dom';
 import APISDK from 'src/api/api-sdk/api-sdk';
 

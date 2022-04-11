@@ -2,7 +2,7 @@ import React, {
   useEffect,
   useState
 } from 'react';
-import fetchData from 'src/modules/utils/fetch-data';
+import fetchData from 'src/components/utils/fetch-data';
 import {
   SubTitle,
   HorizontalSpace
@@ -11,13 +11,14 @@ import {
   useDispatch,
   useSelector
 } from 'react-redux';
-import BuyableItem from 'src/modules/buyable-item/buyable-item';
+import BuyableItem from 'src/components/buyable-item/buyable-item';
 import SetSystemData from 'src/redux/actions/set-system-data';
 
 const HighlightedProductsItem = (props: any): React.ReactElement => {
   const [isLoading, setIsLoading] = useState(false);
   const item: any = props.item;
   const url = `/${item.relationships.classification.data.attributes.slug}/${item.attributes.slug}`;
+  const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
     setIsLoading(false);
@@ -35,7 +36,11 @@ const HighlightedProductsItem = (props: any): React.ReactElement => {
         discount={item.attributes.discount}
         category={item.relationships.classification.data.attributes.name}
         categoryLink={`/${item.relationships.classification.data.attributes.slug}`}
-        description={item.attributes.short_description} />
+        description={item.attributes.short_description}
+        isFavorite={isFavorite}
+        onFavoriteButtonClick={() => {
+          setIsFavorite(!isFavorite);
+        }} />
     </>
   );
 };

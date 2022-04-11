@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './buyable-item.scss';
-import getMoneyFormat from 'src/modules/utils/money-formats';
-// import GenericItemAddToFavoritesButton from 'src/modules/favorite-button/favorite-button';
+import {
+  FavoriteButton,
+  GetMoneyFormat
+} from 'rrmc';
 
 interface BuyableItemInterface {
   url: string;
@@ -17,6 +19,8 @@ interface BuyableItemInterface {
   mini?: boolean;
   discount?: number;
   isLoading?: boolean;
+  isFavorite?: boolean;
+  onFavoriteButtonClick?: CallableFunction
 }
 
 const BuyableItem = (props: BuyableItemInterface): React.ReactElement => {
@@ -41,10 +45,13 @@ const BuyableItem = (props: BuyableItemInterface): React.ReactElement => {
           }
         </Link>
         <div className='BuyableItem__info'>
-          {/* <GenericItemAddToFavoritesButton
-            item={item}
-            isLoading={props.isLoading}
-            setIsLoading={props.setIsLoading} /> */}
+          {
+            props.onFavoriteButtonClick ?
+              <FavoriteButton
+                isFavorite={props.isFavorite}
+                onFavoriteButtonClick={props.onFavoriteButtonClick}
+                isLoading={props.isLoading} /> : null
+          }
           {
             props.category ?
               props.categoryLink ?
@@ -59,12 +66,12 @@ const BuyableItem = (props: BuyableItemInterface): React.ReactElement => {
             {props.name}
           </Link>
           <span className={`BuyableItem__price ${props.mini ? 'BuyableItem__price--mini' : ''} green-text text-darken-3`}>
-            {getMoneyFormat(props.price)}
+            {GetMoneyFormat(props.price)}
           </span>
           {
             props.discount ?
               <span className={`BuyableItem__discount ${props.mini ? 'BuyableItem__discount--mini' : ''} red-text text-lighten-2`}>
-                {getMoneyFormat(props.originalPrice)}
+                {GetMoneyFormat(props.originalPrice)}
               </span> : null
           }
         </div>

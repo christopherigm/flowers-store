@@ -1,11 +1,11 @@
 import { APIGet } from 'src/api/communicator';
-import rebuildData from 'src/modules/utils/json-api-rebuild';
+import { RebuildData } from 'rrmc';
 
 const fetchData = ( url: string ): Promise<any> => {
   return new Promise((res, rej) => {
     APIGet( url )
       .then((d: any) => {
-        res(rebuildData(d));
+        res(RebuildData(d));
       })
       .catch((error) => {
         rej(error);
