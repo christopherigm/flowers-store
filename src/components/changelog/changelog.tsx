@@ -3,23 +3,23 @@ import React, {
   useRef,
   useState
 } from 'react';
-import fetchData from 'src/modules/utils/fetch-data';
+import fetchData from 'src/components/utils/fetch-data';
 import {
+  ParallaxHeaderImage,
   HorizontalSpace,
   SubTitle
 } from 'rrmc';
 import { useSelector } from 'react-redux';
-import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
 import * as M from 'materialize-css';
 import {
-  DateParser
-} from 'src/modules/utils/date-parser';
-import 'src/modules/changelog/changelog.scss';
+  DateParser,
+  GetMoneyFormat
+} from 'rrmc';
+import 'src/components/changelog/changelog.scss';
 import {
   getIcon,
   getType
-} from 'src/modules/changelog/helpers';
-import getMoneyFormat from 'src/modules/utils/money-formats';
+} from 'src/components/changelog/helpers';
 
 const headerPictureFile = '/assets/login.jpg';
 
@@ -137,7 +137,7 @@ const ChangeLog = (): React.ReactElement => {
                   devArray.map((i: any, index: number) => {
                     return (
                       <span className='ChangeLog__data-item grey-text text-darken-3' key={index}>
-                        {i.attributes.first_name} {i.attributes.last_name}: {i.hours} horas ({getMoneyFormat(i.hours * 300)} MXN).
+                        {i.attributes.first_name} {i.attributes.last_name}: {i.hours} horas ({GetMoneyFormat(i.hours * 300)} MXN).
                       </span>
                     );
                   })
@@ -146,7 +146,7 @@ const ChangeLog = (): React.ReactElement => {
                   Horas de desarrollo: <b className='indigo-text'>{totalTime} horas.</b>
                 </span>
                 <span className='ChangeLog__data-item grey-text text-darken-3'>
-                  Costo total del sprint: <b className='green-text'>{getMoneyFormat(totalTime * 300)} MXN.</b>
+                  Costo total del sprint: <b className='green-text'>{GetMoneyFormat(totalTime * 300)} MXN.</b>
                 </span>
                 {
                   i.attributes.comments ?

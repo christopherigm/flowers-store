@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import {
+  ParallaxHeaderImage,
   SubTitle,
   HorizontalSpace
 } from 'rrmc';
-import ParallaxHeaderImage from 'src/modules/parallax-header-image/parallax-header-image';
 
 const headerPictureFile = '/assets/login.jpg';
 

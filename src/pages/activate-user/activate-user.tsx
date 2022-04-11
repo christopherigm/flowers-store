@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import SystemCheck from 'src/modules/system-check/system-check';
+import SystemCheck from 'src/components/system-check/system-check';
 import {
   useParams
 } from 'react-router-dom';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import { HorizontalSpace } from 'rrmc';
 import ActivateUserCall from 'src/pages/activate-user/activate-user-call';
-import Footer from 'src/modules/footer/footer';
+import Footer from 'src/components/footer/footer';
 
 const ActivateUser = (): React.ReactElement => {
   const params: any = useParams();

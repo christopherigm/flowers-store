@@ -2,12 +2,12 @@ import React, {
   useState
 } from 'react';
 import { useSelector } from 'react-redux';
-import SystemCheck from 'src/modules/system-check/system-check';
+import SystemCheck from 'src/components/system-check/system-check';
 import NavBar from 'src/modules/nav-bar/nav-bar';
 import DefaultNavButtons from 'src/modules/nav-bar/default-nav-buttons';
 import HomeTopSlider from 'src/modules/home-top-slider/home-top-slider';
-import Footer from 'src/modules/footer/footer';
-import SystemConfigurationLoader from 'src/modules/system-configuration-loader/system-configuration-loader';
+import Footer from 'src/components/footer/footer';
+import SystemConfigurationLoader from 'src/components/system-configuration-loader/system-configuration-loader';
 import HighlightedProducts from 'src/modules/highlighted-products/highlighted-products';
 import CategoriesGrid from 'src/modules/categories-grid/categories-grid';
 

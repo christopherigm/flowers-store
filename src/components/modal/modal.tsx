@@ -4,7 +4,7 @@ import React, {
 } from 'react';
 import * as M from 'materialize-css';
 import { SubTitle } from 'rrmc';
-import 'src/modules/modal/modal.scss';
+import 'src/components/modal/modal.scss';
 
 const Modal = ( props: any ): React.ReactElement => {
   const modalRef: any = useRef(null);

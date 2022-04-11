@@ -1,7 +1,7 @@
 import React, {
   useEffect
 } from 'react';
-import fetchData from 'src/modules/utils/fetch-data';
+import fetchData from 'src/components/utils/fetch-data';
 import {
   SubTitle,
   HorizontalSpace
