@@ -22,7 +22,6 @@ const CategoriesGrid = (): React.ReactElement => {
   useEffect(() => {
     fetchData('product-classifications/')
       .then((response: any) =>{
-        console.log('categories', response.data);
         dispatch(SetSystemData({
           categories: response.data
         }));

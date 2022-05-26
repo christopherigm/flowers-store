@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Routes from 'src/routes';
 import {
   Chart, ArcElement, LineElement, BarElement, PointElement, BarController, BubbleController, DoughnutController, LineController,
@@ -21,16 +21,36 @@ import store, {
 import { PersistGate } from 'redux-persist/integration/react';
 import 'rrmc/dist/cjs/index.css';
 
-ReactDOM.render(
+
+// Before
+// import { render } from 'react-dom';
+// const container = document.getElementById('app');
+// render(<App tab="home" />, container);
+
+// After
+import { createRoot } from 'react-dom/client';
+const container: any = document.getElementById('root');
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Routes />
       </PersistGate>
     </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <PersistGate loading={null} persistor={persistor}>
+//         <Routes />
+//       </PersistGate>
+//     </Provider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
